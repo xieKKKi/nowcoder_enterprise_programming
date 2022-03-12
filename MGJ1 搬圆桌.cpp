@@ -7,8 +7,9 @@ int main(){
     int r;
     long x, y, x1, y1;
     vector<int> result;
-    while(cin >> r){
-        cin >> x >> y >> x1 >> y1;
+    //while(cin >> r){
+    while(scanf("%d%ld%ld%ld%ld", &r, &x, &y, &x1, &y1) == 5){
+        //cin >> x >> y >> x1 >> y1;
         float distance = sqrt((x-x1)*(x-x1) + (y-y1)*(y-y1));
         float step = distance / (2*r);
         if(step - int(step) <= 0.0)
